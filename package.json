@@ -7,9 +7,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "emojibase-data": "^7.0.1",
     "next": "12.1.4",
     "react": "18.0.0",
-    "react-dom": "18.0.0"
+    "react-dom": "18.0.0",
+    "sass": "^1.50.1",
+    "twemoji": "^14.0.2"
   },
   "devDependencies": {
     "eslint": "8.12.0",
