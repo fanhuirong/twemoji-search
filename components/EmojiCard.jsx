@@ -2,16 +2,24 @@
 import React, { memo } from "react"
 import Image from "next/image"
 import { getEmojiUrl } from "../utils"
+import styles from '../styles/EmojiCard.module.scss'
 
-const Twemoji = ({ emoji, size = 24 }) => {
+const Twemoji = ({ emoji, size = 72 }) => {
   const image = getEmojiUrl(emoji.hexcode)
   return (
-    <Image
+    <div className={styles.card}>
+      <Image
         src={image}
         height={size}
         width={size}
         alt={emoji.emoji}
     />
+    <h4 className={styles.title}>{emoji.label}</h4>
+    <p>
+        <span className={styles.info}>HEX:</span>
+        <span className={styles.hexcode}>{emoji.hexcode}</span>
+    </p>
+    </div>
   )
 }
 

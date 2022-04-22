@@ -10,10 +10,12 @@ export default function Home() {
       <Head>
         <title>Twemoji Search</title>
       </Head>
-      <h1>Twemoji Search</h1>
-      {emojis.map((item,index) =>{
-        return (<EmojiCard key={index} emoji={item}/>)
-      })}
+      <h1 className={styles.title}>Twemoji Search</h1>
+      <main className={styles.list}>
+        {emojis.map((item,index) =>{
+          return (<EmojiCard key={index} emoji={item}/>)
+        })}
+      </main>
     </div>
   )
 }
