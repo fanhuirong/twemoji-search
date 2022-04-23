@@ -1,0 +1,33 @@
+.card {
+    width: 180px;
+    padding: 16px;
+    margin: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color:  #f3d5a4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.1s ease-in-out;
+    color: #885130;
+
+    .title {
+      width: 160px;
+      margin-top: 8px;
+      text-align: center;
+    }
+    .hexcode {
+      margin-top: 6px;
+      font-size: 14px;
+      .hex{
+        font-weight: bold;
+      }
+      width: 140px;
+      text-align: center;
+    }
+    &:hover {
+      opacity: 0.85;
+    }
+
+}

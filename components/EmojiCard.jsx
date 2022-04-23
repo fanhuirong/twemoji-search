@@ -15,9 +15,9 @@ const Twemoji = ({ emoji, size = 72 }) => {
         alt={emoji.emoji}
     />
     <h4 className={styles.title}>{emoji.label}</h4>
-    <p>
-        <span className={styles.info}>HEX:</span>
-        <span className={styles.hexcode}>{emoji.hexcode}</span>
+    <p className={styles.hexcode}>
+        <span className={styles.hex}>HEX : </span>
+        <span>{emoji.hexcode}</span>
     </p>
     </div>
   )
